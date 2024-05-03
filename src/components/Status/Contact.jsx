@@ -6,7 +6,7 @@ import Link from 'next/link';
 const Contact = ({ image, mediumImage, name, description, url }) => {
     return (
         <Link href={url} target='blank'>
-            <Card className="p-3 flex items-center gap-4 hover:bg-zinc-400/50 group mb-3">
+            <Card className="p-2 flex items-center gap-4 hover:bg-zinc-400/50 group mb-3">
                 <div className='relative w-10 h-10'>
                     <img src={image} alt={name} className='w-full h-full rounded-full object-cover' />
                     <div className='absolute w-4 h-4 right-0 bottom-0'>

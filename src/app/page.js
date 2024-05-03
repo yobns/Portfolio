@@ -4,12 +4,10 @@ import Title from "@/components/Title";
 
 export default function Home() {
   return (
-    <main className="p-7 md:p-20 min-h-screen">
-      <Spacing size="lg"/>
+    <main className="p-5 pt-20 md:p-20 min-h-screen">
       <Title />
-      <Spacing size="sm"/>
       <Status/>
-      <Spacing size="md"/>
+      <Spacing size="sm"/>
     </main>
   );
 }

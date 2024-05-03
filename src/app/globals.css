@@ -77,6 +77,17 @@
   font-family: 'Homemade Apple', cursive;
 }
 
+.fontTech {
+  font-family: 'Share Tech Mono', monospace;
+}
+
 .hr-border {
   border-color: lightgray;
+}
+
+@media (max-width: 600px) {  /* Ajustez la largeur selon vos besoins */
+  .break-on-small {
+    display: block; /* Cela forcera le retour à la ligne après 'are' */
+    margin-bottom: 0.5rem; /* Espacement optionnel après le retour à la ligne */
+  }
 }

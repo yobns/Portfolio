@@ -4,35 +4,34 @@ import React, { createContext, useState, useEffect, useContext } from 'react';
 const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  let savedDarkMode = false;
-  if (typeof window !== "undefined") {
-    const saved = localStorage.getItem('darkMode');
-    savedDarkMode = saved !== null ? JSON.parse(saved) : window.matchMedia('(prefers-color-scheme: dark)').matches;
-  }
-
-  const [darkMode, setDarkMode] = useState(savedDarkMode);
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      localStorage.setItem('darkMode', JSON.stringify(darkMode));
+    const [isMounted, setIsMounted] = useState(false);
+    let savedDarkMode = false;
+    if (typeof window !== "undefined" && isMounted) {
+        const saved = localStorage.getItem('darkMode');
+        savedDarkMode = saved !== null ? JSON.parse(saved) : window.matchMedia('(prefers-color-scheme: dark)').matches;
     }
-  }, [darkMode]);
+    const [darkMode, setDarkMode] = useState(savedDarkMode);
 
-  const toggleDarkMode = () => {
-    setDarkMode(prevMode => !prevMode);
-  };
+    useEffect(() => {
+        setIsMounted(true);  // Cela activera la re-renderisation après le montage côté client
+        if (typeof window !== "undefined") {
+            localStorage.setItem('darkMode', JSON.stringify(darkMode));
+        }
+    }, [darkMode]);
 
-  const bodyClass = darkMode ? 'dark' : 'light';
+    const toggleDarkMode = () => {
+        setDarkMode(prevMode => !prevMode);
+    };
 
-  return (
-    <ThemeContext.Provider value={{ darkMode, toggleDarkMode }}>
-      <body className={bodyClass}>
-        {children}
-      </body>
-    </ThemeContext.Provider>
-  );
+    const bodyClass = darkMode ? 'dark' : 'light';
+    
+    return (
+        <ThemeContext.Provider value={{ darkMode, toggleDarkMode }}>
+            <body className={isMounted ? bodyClass : ''}>{children}</body>
+        </ThemeContext.Provider>
+    );
 };
 
 export const useTheme = () => {
-  return useContext(ThemeContext);
+    return useContext(ThemeContext);
 };
