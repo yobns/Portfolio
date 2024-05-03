@@ -37,27 +37,21 @@ const Nav = () => {
                     <Link href="#edu-section" className={menuClasses}>Education</Link>
                     <Link href="#contact-section" className={menuClasses}>Contact</Link>
                 </div>
-                <div className="md:flex md:items-center md:space-x-6">
-                    <div className="hidden md:block">
-                        <ThemeToggleButton />
-                    </div>
-
+                <div className="flex items-center space-x-5">
+                    <ThemeToggleButton />
                     <button onClick={() => setIsOpen(!isOpen)} className="md:hidden">
-                        {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+                        {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-7 h-7" />}
                     </button>
                 </div>
             </div>
             {isOpen && (
                 <>
-                    <div className="md:hidden z-20 bg-background text-foreground fixed top-15 inset-x-0 shadow-lg py-2 flex justify-between px-[5%] pt-10">
+                    <div className="md:hidden z-20 bg-background text-foreground fixed top-15 inset-x-0 shadow-lg py-2 flex justify-between px-[5%]">
                         <div className="flex flex-col items-start">
                             <Link href="#projects-section" className={menuClasses} onClick={() => setIsOpen(false)}>Projects</Link>
                             <Link href="#work-section" className={menuClasses} onClick={() => setIsOpen(false)}>Work</Link>
                             <Link href="#edu-section" className={menuClasses} onClick={() => setIsOpen(false)}>Education</Link>
                             <Link href="#contact-section" className={menuClasses} onClick={() => setIsOpen(false)}>Contact</Link>
-                        </div>
-                        <div className="flex flex-col items-end pr-4 pt-[4rem]">
-                            <ThemeToggleButton />
                         </div>
                     </div>
                     <div className="fixed top-30 min-h-screen inset-x-0 bg-black bg-opacity-25 z-10" onClick={() => setIsOpen(false)}></div>

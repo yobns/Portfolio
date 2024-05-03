@@ -13,7 +13,7 @@ export const ThemeProvider = ({ children }) => {
     const [darkMode, setDarkMode] = useState(savedDarkMode);
 
     useEffect(() => {
-        setIsMounted(true);  // Cela activera la re-renderisation après le montage côté client
+        setIsMounted(true);
         if (typeof window !== "undefined") {
             localStorage.setItem('darkMode', JSON.stringify(darkMode));
         }
