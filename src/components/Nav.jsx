@@ -31,7 +31,7 @@ const Nav = () => {
         <nav className={navClasses}>
             <div className="container mx-auto p-4 flex justify-between items-center xl:w-[65%] w-[90%]">
                 <Link href="/" className="font font-bold text-2xl -rotate-6 md:hover:rotate-0 transition-transform">YB</Link>
-                <div className="hidden md:flex items-center space-x-6 flex-auto justify-center">
+                <div className="hidden md:flex items-center space-x-6 mr-10 flex-auto justify-center">
                     <Link href="#projects-section" className={menuClasses}>Projects</Link>
                     <Link href="#work-section" className={menuClasses}>Work</Link>
                     <Link href="#edu-section" className={menuClasses}>Education</Link>

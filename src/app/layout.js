@@ -5,11 +5,11 @@ import Footer from "@/components/Footer";
 
 export const metadata = {
   metadataBase: new URL("https://www.yonibns.com"),
-  keywords: ["yoni","bensoussan", "yoni bensoussan", "bns", "yonibns", "full stack developer", "developpeur full stack", "react", "nextjs", "react developer", "developpeur react"],
+  keywords: [ "yoni bensoussan", "bensoussan yoni", "yonibns", "bns", "full stack developer", "developpeur full stack", "react", "nextjs", "react developer", "developpeur react"],
   title: "Yoni Bensoussan - Portfolio",
   description: "Full stack developer",
   openGraph: {
-    images: "./opengraph-img.png"
+    images: "/src/app/opengraph-img.jpg"
   }
 };
 

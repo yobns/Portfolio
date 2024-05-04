@@ -1,7 +1,5 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
-import { Github, Linkedin, Mail } from 'lucide-react';
 import { Badge } from './ui/badge';
 import ReactIcon from '../../public/logo/ReactIcon.jsx';
 import NextIcon from '../../public/logo/NextIcon.jsx';
@@ -9,10 +7,7 @@ import FranceIcon from '../../public/logo/FranceIcon.jsx';
 import IsraelIcon from '../../public/logo/IsraelIcon.jsx';
 import ContactLinks from './ContactLinks';
 
-
 const Title = () => {
-  const menuClasses = "hover:text-muted-foreground transition-colors duration-300";
-
   return (
     <>
       <div className='-mt-[5rem]'>
