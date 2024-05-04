@@ -19,13 +19,13 @@ const handleConfetti = (event) => {
 const ContactLinks = ({ className }) => {
     return (
         <div className={`inline-flex p-1 items-center space-x-3 mt-2 justify-center rounded-lg border bg-card text-card-foreground shadow-sm ${className}`}>
-            <button className="hover:text-muted-foreground transition-colors duration-300" onClick={handleConfetti} data-url="mailto:contact@yonibns.com">
+            <button className="hover:text-muted-foreground transition-colors duration-300" onClick={handleConfetti} data-url="mailto:contact@yonibns.com" aria-label="mail">
                 <Mail size={17} />
             </button>
-            <button className="hover:text-muted-foreground transition-colors duration-300" onClick={handleConfetti} data-url="https://www.linkedin.com/in/yonibns">
+            <button className="hover:text-muted-foreground transition-colors duration-300" onClick={handleConfetti} data-url="https://www.linkedin.com/in/yonibns" aria-label="linkedin">
                 <Linkedin size={17} />
             </button>
-            <button className="hover:text-muted-foreground transition-colors duration-300" onClick={handleConfetti} data-url="https://github.com/yobns">
+            <button className="hover:text-muted-foreground transition-colors duration-300" onClick={handleConfetti} data-url="https://github.com/yobns" aria-label="github">
                 <Github size={17} />
             </button>
         </div>

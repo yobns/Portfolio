@@ -75,11 +75,11 @@ html {
 }
 
 .font {
-  font-family: 'Homemade Apple', monospace;
+  font-family: var(--font-homemade-apple);
 }
 
 .fontTech {
-  font-family: 'Share Tech Mono', monospace;
+  font-family: var(--font-tech);
 }
 
 .hr-border {

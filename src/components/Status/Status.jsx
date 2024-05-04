@@ -20,7 +20,7 @@ const Status = () => {
                 </Card>
                 <Card className='p-4'>
                     <p className='text-lg text-muted-foreground py-2' id="contact-section">Contact</p>
-                    <Contact name="contact@yonibns.com" image="./me3.jpg" mediumImage="./logo/email.jpg" description="Email" url="mailto:contact@yonibns.com" />
+                    <Contact name="contact@yonibns.com" image="./img.jpg" mediumImage="./logo/email.jpg" description="Email" url="mailto:contact@yonibns.com" />
                     <div className='flex flex-row gap-1 md:gap-3'>
                         <div className='flex-1'>
                             <Contact name="@yonibns" image="./me.jpg" mediumImage="./logo/linkedin.png" description="Linkedin" url="https://www.linkedin.com/in/yonibns" />

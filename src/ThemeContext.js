@@ -1,5 +1,18 @@
 "use client";
 import React, { createContext, useState, useEffect, useContext } from 'react';
+import { Share_Tech_Mono, Homemade_Apple } from 'next/font/google'
+
+const techInit = Share_Tech_Mono({
+    subsets: ['latin'],
+    weight: ['400'],
+    variable: '--font-tech',
+})
+
+const appleInit = Homemade_Apple({
+    subsets: ['latin'],
+    weight: ['400'],
+    variable: '--font-homemade-apple',
+})
 
 const ThemeContext = createContext();
 
@@ -24,10 +37,10 @@ export const ThemeProvider = ({ children }) => {
     };
 
     const bodyClass = darkMode ? 'dark' : 'light';
-    
+
     return (
         <ThemeContext.Provider value={{ darkMode, toggleDarkMode }}>
-            <body className={isMounted ? bodyClass : ''}>{children}</body>
+            <body className={`${isMounted ? bodyClass : ''} ${techInit.variable} ${appleInit.variable}`}>{children}</body>
         </ThemeContext.Provider>
     );
 };
