@@ -8,8 +8,7 @@ export const metadata = {
   keywords: ["yoni","bensoussan", "yoni bensoussan", "bns", "yonibns", "full stack developer", "developpeur full stack", "react", "nextjs", "react developer", "developpeur react"],
   title: "Yoni Bensoussan - Portfolio",
   openGraph: {
-    description: "Full stack developer",
-    images: ["../../public/logo/yb.jpg"]
+    description: "Full stack developer"
   }
 };
 
