@@ -23,14 +23,14 @@ const Nav = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    const menuClasses = "flex p-3 text-md text-gray-800 hover:text-muted-foreground rounded transition-colors duration-300 inline-block";
+    const menuClasses = "flex p-3 text-sm text-gray-800 hover:text-muted-foreground rounded transition-colors duration-300 inline-block";
     const shadowClass = (!hideOnScroll && !isAtTop) ? 'shadow-md' : '';
     const navClasses = `bg-background text-foreground fixed top-0 inset-x-0 z-10 transition-transform duration-300 ${hideOnScroll ? '-translate-y-full' : 'translate-y-0'} ${shadowClass}`;
 
     return (
         <nav className={navClasses}>
             <div className="container mx-auto p-4 flex justify-between items-center xl:w-[65%] w-[90%]">
-                <Link href="/" className="font font-bold text-3xl">YB</Link>
+                <Link href="/" className="font font-bold text-2xl -rotate-6 md:hover:rotate-0 transition-transform">YB</Link>
                 <div className="hidden md:flex items-center space-x-6 flex-auto justify-center">
                     <Link href="#projects-section" className={menuClasses}>Projects</Link>
                     <Link href="#work-section" className={menuClasses}>Work</Link>
@@ -40,7 +40,7 @@ const Nav = () => {
                 <div className="flex items-center space-x-5">
                     <ThemeToggleButton />
                     <button onClick={() => setIsOpen(!isOpen)} className="md:hidden">
-                        {isOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
+                        {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
                     </button>
                 </div>
             </div>

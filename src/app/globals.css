@@ -47,17 +47,6 @@
     --destructive-foreground: 0 0% 100%;
     --ring: 217.5 9.09% 17.25%;
   }
-}
-
-.light a {
-  color: var(--foreground);
-}
-
-.dark a {
-  color: var(--primary-foreground);
-}
-
-@layer base {
   * {
     @apply border-border;
   }
@@ -73,8 +62,20 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.light a {
+  color: var(--foreground);
+}
+
+.dark a {
+  color: var(--primary-foreground);
+}
+
 .font {
-  font-family: 'Homemade Apple', cursive;
+  font-family: 'Homemade Apple', monospace;
 }
 
 .fontTech {
@@ -85,9 +86,9 @@
   border-color: lightgray;
 }
 
-@media (max-width: 600px) {  /* Ajustez la largeur selon vos besoins */
+@media (max-width: 600px) {
   .break-on-small {
-    display: block; /* Cela forcera le retour à la ligne après 'are' */
-    margin-bottom: 0.5rem; /* Espacement optionnel après le retour à la ligne */
+    display: block;
+    margin-bottom: 0.5rem;
   }
 }

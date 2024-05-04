@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "add": "^2.0.6",
+    "canvas-confetti": "^1.9.3",
     "card": "^2.5.4",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
