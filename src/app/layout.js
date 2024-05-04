@@ -7,8 +7,9 @@ export const metadata = {
   metadataBase: new URL("https://www.yonibns.com"),
   keywords: ["yoni","bensoussan", "yoni bensoussan", "bns", "yonibns", "full stack developer", "developpeur full stack", "react", "nextjs", "react developer", "developpeur react"],
   title: "Yoni Bensoussan - Portfolio",
+  description: "Full stack developer",
   openGraph: {
-    description: "Full stack developer"
+    images: "./opengraph-img.png"
   }
 };
 
