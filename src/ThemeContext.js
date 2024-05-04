@@ -40,7 +40,9 @@ export const ThemeProvider = ({ children }) => {
 
     return (
         <ThemeContext.Provider value={{ darkMode, toggleDarkMode }}>
-            <body className={`${isMounted ? bodyClass : ''} ${techInit.variable} ${appleInit.variable}`}>{children}</body>
+            <body className={`${isMounted ? bodyClass : ''} ${techInit.variable} ${appleInit.variable}`}>
+                {children}
+            </body>
         </ThemeContext.Provider>
     );
 };

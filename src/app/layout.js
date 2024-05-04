@@ -2,6 +2,8 @@ import "./globals.css";
 import Nav from "@/components/Nav";
 import { ThemeProvider } from "@/ThemeContext";
 import Footer from "@/components/Footer";
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata = {
   metadataBase: new URL("https://www.yonibns.com"),
@@ -23,6 +25,8 @@ export default function RootLayout({ children }) {
         <Nav />
         {children}
         <Footer />
+        <Analytics />
+        <SpeedInsights />
       </ThemeProvider>
     </html>
   );
