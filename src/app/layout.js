@@ -10,8 +10,11 @@ export const metadata = {
   keywords: ["yoni bensoussan", "bensoussan yoni", "yonibns", "bns", "full stack developer", "developpeur full stack", "react", "nextjs", "react developer", "developpeur react"],
   title: "Yoni Bensoussan - Portfolio",
   description: "Full stack developer",
+  icons: {
+    icon: '/icon.ico',
+  },
   openGraph: {
-    images: ["/src/app/opengraph-img.jpg"]
+    images: ["/opengraph-img.jpg"]
   }
 };
 
@@ -19,7 +22,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="./favicon.ico" />
       </head>
       <ThemeProvider>
         <Nav />
