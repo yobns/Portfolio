@@ -13,7 +13,7 @@ const Title = () => {
       <div className='-mt-[5rem]'>
         <div className="flex justify-center items-center min-h-screen flex-col">
           <div className="flex justify-center items-center">
-            <div className="flex flex-col items-center mr-5">
+            <div className="flex flex-col items-center mr-1 md:mr-5">
               <h2 className="text-xl font-bold whitespace-nowrap">Yoni Bensoussan</h2>
               <h3 className="text-lg font-light whitespace-nowrap">Full Stack Developer</h3>
             <ContactLinks/>
