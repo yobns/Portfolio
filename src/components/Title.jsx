@@ -13,7 +13,7 @@ const Title = () => {
       <div className='-mt-[5rem]'>
         <div className="flex justify-center items-center min-h-screen flex-col">
           <div className="flex justify-center items-center">
-            <div className="flex flex-col items-center mr-5 md:mr-10">
+            <div className="flex flex-col items-center mr-5">
               <h2 className="text-xl font-bold whitespace-nowrap">Yoni Bensoussan</h2>
               <h3 className="text-lg font-light whitespace-nowrap">Full Stack Developer</h3>
             <ContactLinks/>
@@ -22,7 +22,7 @@ const Title = () => {
               <Image src="/IMG.PNG" alt="Yoni Bensoussan" width={150} height={150} className="object-cover" priority />
             </div>
           </div>
-          <div className='text-center mt-20 fontTech text-sm leading-[2]'>
+          <div className='text-center mt-20 fontTech text-sm leading-[2] mr-3'>
             My frameworks are <Badge variant="outline" className="-rotate-6 md:hover:-rotate-0"><ReactIcon width={13} height={13} className='mr-2' />React</Badge>
             {" and"} <Badge variant="outline"><NextIcon width={13} height={13} className='mr-2' />NextJS</Badge>
             <br />

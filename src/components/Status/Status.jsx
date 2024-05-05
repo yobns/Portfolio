@@ -5,13 +5,22 @@ import Work from './Work';
 import Contact from './Contact';
 import Education from './Education';
 import { PROJECTS, WORK, EDUCATION } from './Data';
+import { ArrowUpRight } from 'lucide-react';
 
 const Status = () => {
     return (
         <div className='flex max-pmd:flex-col items-start gap-4 xl:px-[15%] overflow-hidden'>
             <div className='flex-[3] w-full flex flex-col gap-4 md:gap-2'>
                 <Card className='p-4'>
-                    <p className='text-lg text-muted-foreground py-2' id="projects-section">Projects</p>
+                    <div className='flex justify-between items-center'>
+                        <p className='text-lg text-muted-foreground py-2' id="projects-section">Projects</p>
+                        <a href="https://github.com/yobns?tab=repositories" target="blank" rel="noopener noreferrer">
+                            <span className='text-muted-foreground hover:text-foreground flex items-center gap-1 text-2xs'>
+                                View All
+                                <ArrowUpRight size={12} />
+                            </span>
+                        </a>
+                    </div>
                     <div className='flex flex-col gap-3'>
                         {PROJECTS.map((project, index) => (
                             <Project key={index} {...project} />

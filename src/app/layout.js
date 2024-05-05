@@ -11,7 +11,7 @@ export const metadata = {
   title: "Yoni Bensoussan - Portfolio",
   description: "Full stack developer",
   openGraph: {
-    images: "/src/app/opengraph-img.jpg"
+    images: ["/src/app/opengraph-img.jpg"]
   }
 };
 
@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="./favicon.png" />
+        <link rel="icon" href="./favicon.ico" />
       </head>
       <ThemeProvider>
         <Nav />
