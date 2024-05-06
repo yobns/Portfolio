@@ -9,7 +9,7 @@ export const metadata = {
   metadataBase: new URL("https://www.yonibns.com"),
   keywords: ["yoni bensoussan", "bensoussan yoni", "yonibns", "bns", "full stack developer", "developpeur full stack", "react", "nextjs", "react developer", "developpeur react"],
   title: "Yoni Bensoussan - Portfolio",
-  description: "Yoni Bensoussan, a Full Stack Developer specialized in React and Next.js, discover my projects, background, and contact information",
+  description: "Yoni Bensoussan, Full Stack Developer specialized in React and Next.js, discover my projects, background, and contact information",
   icons: {
     icon: '/icon.ico',
   },
