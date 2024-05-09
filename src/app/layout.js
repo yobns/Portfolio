@@ -11,7 +11,7 @@ export const metadata = {
   title: "Yoni Bensoussan - Portfolio",
   description: "Yoni Bensoussan, Full Stack Developer specialized in React and Next.js, discover my projects, background, and contact information",
   icons: {
-    icon: '/icon.ico',
+    icon: '/icon.png',
   },
   openGraph: {
     images: ["/opengraph-img.jpg"]

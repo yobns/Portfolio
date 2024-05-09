@@ -39,7 +39,7 @@ const Nav = () => {
                 </div>
                 <div className="flex items-center space-x-5">
                     <ThemeToggleButton />
-                    <button onClick={() => setIsOpen(!isOpen)} className="md:hidden">
+                    <button onClick={() => setIsOpen(!isOpen)} className="md:hidden" aria-label="Menu button">
                         {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
                     </button>
                 </div>
