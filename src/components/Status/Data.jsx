@@ -1,10 +1,10 @@
-import { AreaChart, CatIcon, Gamepad2, MessageCircleMore } from 'lucide-react';
+import { AreaChart, CatIcon, Gamepad2, BriefcaseBusiness } from 'lucide-react';
 
 export const PROJECTS = [
     { Logo: AreaChart, title: "Dashboard", description: "Excel file manager", url: "https://github.com/yobns/Dashboard" },
+    { Logo: BriefcaseBusiness, title: "Portfolio", description: "This portfolio", url: "https://github.com/yobns/Portfolio" },
     { Logo: Gamepad2, title: "FrenchyBird", description: "Flappy Bird style game", url: "https://github.com/yobns/FrenchyBird" },
     { Logo: CatIcon, title: "Pet Adoption", description: "ITC Full Stack App", url: "https://github.com/yobns/Pet-Adoption" },
-    { Logo: MessageCircleMore, title: "ChitChat", description: "ITC Hackathon Feb24", url: "https://github.com/yobns/ChitChat" },
 ];
 
 export const WORK = [
