@@ -53,7 +53,7 @@ const Status = () => {
                     <p className='text-lg text-muted-foreground py-2' id="edu-section">Education</p>
                     <div className='flex flex-col gap-4'>
                         {EDUCATION.map((education, index) => (
-                            <Education key={index} {...education} />
+                            <Education key={index} {...education} /> 
                         ))}
                     </div>
                 </Card>
