@@ -40,7 +40,7 @@ const Status = () => {
                     </div>
                 </Card>
             </div>
-            <div className='flex-[2] w-full flex flex-col gap-4 md:gap-5'>
+            <div className='flex-[2] w-full flex flex-col gap-4 md:gap-6'>
                 <Card className='p-4 w-full flex-1'>
                     <p className='text-lg text-muted-foreground py-2' id="work-section">Work</p>
                     <div className='flex flex-col gap-4'>
