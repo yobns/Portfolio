@@ -7,7 +7,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata = {
   metadataBase: new URL("https://www.yonibns.com"),
-  keywords: ["yoni bensoussan", "bensoussan yoni", "yonibns", "bns", "full stack developer", "developpeur full stack", "react", "nextjs", "react developer", "developpeur react"],
+  keywords: ["yoni bensoussan", "bensoussan yoni", "yonibns", "bns"],
   title: "Yoni Bensoussan - Portfolio",
   description: "Yoni Bensoussan, Full Stack Developer specialized in React and Next.js, discover my projects, background, and contact information",
   icons: {
