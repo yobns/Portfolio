@@ -14,7 +14,8 @@ export const metadata = {
     icon: '/icon.png',
   },
   openGraph: {
-    images: ["/opengraph-img.jpg"]
+    images: ["/opengraph-img.jpg"],
+    site_name: "Yoni Bensoussan"
   }
 };
 
