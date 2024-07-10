@@ -23,6 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <meta property="og:site_name" content={metadata.openGraph.site_name} />
       </head>
       <ThemeProvider>
         <Nav />
