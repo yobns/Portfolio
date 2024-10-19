@@ -15,7 +15,7 @@ const Status = () => {
                     <div className='flex justify-between items-center'>
                         <p className='text-lg text-muted-foreground py-2' id="projects-section">Projects</p>
                         <a href="https://github.com/yobns?tab=repositories" target="blank" rel="noopener noreferrer">
-                            <span className='text-muted-foreground hover:text-foreground flex items-center gap-1 text-2xs'>
+                            <span className='text-foreground hover:text-foreground flex items-center gap-1 text-2xs'>
                                 View All
                                 <ArrowUpRight size={12} />
                             </span>

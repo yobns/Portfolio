@@ -5,6 +5,7 @@ import ReactIcon from '../../public/logo/ReactIcon.jsx';
 import NextIcon from '../../public/logo/NextIcon.jsx';
 import FranceIcon from '../../public/logo/FranceIcon.jsx';
 import IsraelIcon from '../../public/logo/IsraelIcon.jsx';
+import Logo42 from '../../public/Logo42.jsx';
 import ContactLinks from './ContactLinks';
 
 const Title = () => {
@@ -26,8 +27,9 @@ const Title = () => {
             My frameworks are <Badge variant="outline" className="-rotate-6 md:hover:-rotate-0"><ReactIcon width={13} height={13} className='mr-2' />React</Badge>
             {" and"} <Badge variant="outline"><NextIcon width={13} height={13} className='mr-2' />NextJS</Badge>
             <br />
-            from <Badge variant="outline"><FranceIcon width={13} height={13} className='mr-2' /></Badge>
-            {" currently in"} <Badge variant="outline"><IsraelIcon width={13} height={13} className='mr-2' /></Badge>
+            {/* from <Badge variant="outline"><FranceIcon width={13} height={13} className='mr-2' /></Badge>
+            {" currently in"} <Badge variant="outline"><IsraelIcon width={13} height={13} className='mr-2' /></Badge> */}
+            Currently at <Badge variant="outline" className="align-middle"><Logo42 width={13} height={13} className='mr-2' /></Badge>
           </div>
         </div>
       </div>
