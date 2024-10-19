@@ -1,10 +1,10 @@
 import { AreaChart, Gamepad2, BriefcaseBusiness, Blocks } from 'lucide-react';
 
 export const PROJECTS = [
-    { Logo: Blocks, title: "CopyCode", description: "VSCode Extension to copy the contents of files for efficient use with LLMs.", url: "https://marketplace.visualstudio.com/items?itemName=copycode.copycodeai", imageUrl: "/logo/copycode.png"  },
+    { Logo: Blocks, title: "CopyCode", description: "VSCode Extension to copy the contents of files for efficient use with LLMs.", url: "https://marketplace.visualstudio.com/items?itemName=copycode.copycodeai", imageUrl: "/logo/copy.png"  },
     { Logo: BriefcaseBusiness, title: "Portfolio", description: "This website", url: "https://github.com/yobns/Portfolio" },
     { Logo: AreaChart, title: "Dashboard", description: "Excel file manager", url: "https://github.com/yobns/Dashboard" },
-    { Logo: Gamepad2, title: "FrenchyBird", description: "Flappy Bird style game", url: "https://github.com/yobns/FrenchyBird", imageUrl: "/logo/frenchybird.png" },
+    { Logo: Gamepad2, title: "FrenchyBird", description: "Flappy Bird style game", url: "https://frenchy-bird.vercel.app/", imageUrl: "/logo/frenchybird.png" },
 ];
 
 export const WORK = [

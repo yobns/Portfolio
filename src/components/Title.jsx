@@ -5,7 +5,7 @@ import ReactIcon from '../../public/logo/ReactIcon.jsx';
 import NextIcon from '../../public/logo/NextIcon.jsx';
 import FranceIcon from '../../public/logo/FranceIcon.jsx';
 import IsraelIcon from '../../public/logo/IsraelIcon.jsx';
-import Logo42 from '../../public/Logo42.jsx';
+import Logo42 from '../../public/logo/Logo42.jsx';
 import ContactLinks from './ContactLinks';
 
 const Title = () => {
